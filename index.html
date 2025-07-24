@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8"/>
+    <title>A Beginner's Guide to Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-$END$
+
+<main id="main-doc">
+
+    <nav id="navbar">
+        <header>
+            <h1>A Beginner's Guide to Python</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#What_Is_Python?">What is Python?</a></li>
+            <li><a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+            <li><a class="nav-link" href="#Control_Flow:_if,_elif,_else">Control Flow: if, elif, else</a></li>
+            <li><a class="nav-link" href="#Loops_and_Iteration">Loops and Iteration</a></li>
+            <li><a class="nav-link" href="#Functions_and_Reusability">Functions and Reusability</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section" id="What_Is_Python?">
+        <header><h2>What Is Python?</h2></header>
+        <p>Python is a powerful, high-level programming language that's known for being easy to read and simple to
+            write. It was created by Guido van Rossum and released in 1991, and today it's one of the most widely used
+            languages in the world.</p><br>
+        <p>Python is used in many fields, some of which include:</p><br>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Analysis</li>
+            <li>Automation</li>
+            <li>Artificial Intelligence</li>
+            <li>Game Development</li>
+        </ul>
+        <br>
+        <p>Its clean and intuitive syntax makes it a top choice for people who are just starting out with coding. Unlike
+            some other languages, Python does not require semicolons or complex curly brace blocks, making it feel more
+            like writing in plain English.</p>
+        <p>Here's what a basic Python program looks like:</p>
+        <pre><code># A simple program that prints a message
+print("Hello, world!")</code></pre>
+        <p>Just one line of code, and you've written your first Python program.</p><br>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+        <header><h2>Variables and Data Types</h2></header>
+        <p>In Python, variables are used to store data, and you don't need to explicitly declare their type. Python
+            figures it out based on the value you assign. This makes it easy to write quick, flexible code without
+            having to worry about too much syntax up front.
+
+            <br><br>
+
+            Here are some common data types:</p>
+        <pre><code>name = "Alice"        # String
+age = 30              # Integer
+height = 1.75         # Float
+is_student = True     # Boolean
+</code></pre>
+        <p>You can use these variables to perform actions or print them out:</p>
+        <code>print(name, "is", age, "years old.")</code>
+        <p>Python also supports dynamic typing, meaning you can change the type of a variable later in your code (though
+            it's generally good practice to avoid that to keep things clear).</p><br>
+    </section>
+
+    <section class="main-section" id="Control_Flow:_if,_elif,_else">
+        <header><h2>Control Flow: if, elif, else</h2></header>
+        <p>Control flow lets your program make decisions. In Python, the <code>if</code>, <code>elif</code>, and <code>else</code>
+            statements are used to run different blocks of code depending on certain conditions. This is one of the most
+            essential features in programming.</p>
+        <pre><code>temperature = 18
+
+if temperature > 25:
+    print("It's hot outside.")
+elif temperature > 15:
+    print("It's a pleasant day.")
+else:
+    print("It's a bit chilly.")
+</code></pre>
+        <p>Indentation is critical in Python. It tells the interpreter which lines belong to which blocks. If you forget
+            to indent properly, the program will raise an error or behave unexpectedly.</p><br>
+    </section>
+
+    <section class="main-section" id="Loops_and_Iteration">
+        <header><h2>Loops and Iteration</h2></header>
+        <p>Sometimes, you want to repeat a certain block of code multiple times, that's where loops come in. Python
+            offers two main types: <code>for</code> loops and <code>while</code> loops.
+
+            A <code>for</code> loop is commonly used when you know in advance how many times you want to run something:
+        </p>
+        <pre><code>for i in range(5):
+    print("Loop number:", i)
+</code></pre>
+        <p>This will output the numbers 0 to 4, each on a new line.
+
+            A <code>while</code> loop continues running as long as a certain condition is true:</p>
+        <pre><code>count = 0
+while count < 3:
+    print("Counting:", count)
+    count += 1
+</code></pre>
+        <p>Use loops to process lists, repeat tasks, or even wait for user input. Just be careful — a while loop with a
+            condition that never becomes false will run forever!</p><br>
+    </section>
+
+    <section class="main-section" id="Functions_and_Reusability">
+        <header><h2>Functions and Reusability</h2></header>
+        <p>Functions are blocks of code that perform specific tasks. They help keep your code organized and reusable.
+            You define a function using the <code>def</code> keyword, give it a name, and then write the block of code
+            it should run.
+
+            Here's an example:</p>
+        <pre><code>def greet(name):
+    print("Hello,", name)
+
+greet("Sam")
+greet("Frodo")
+</code></pre>
+        <p>This prints a personalized greeting for each name you pass in.
+
+            Functions can also return values, which makes them extremely powerful:</p>
+        <pre><code>def multiply(x, y):
+    return x * y
+
+product = multiply(3, 4)
+print("The result is:", product)
+</code></pre>
+        <p>As your programs get larger, functions become essential for keeping things modular and easier to
+            understand.</p>
+    </section>
+</main>
+<footer id="footer">
+    <p>Created with ❤️ by Wouter Loch &copy; 2025</p>
+</footer>
+
 </body>
+
 </html>
